@@ -1,0 +1,7 @@
+COMO INSTALAR
+=============
+
+01 - Menu Ferramentas / Plug-Ins.
+02 - Aba "Obtidos por Download".
+03 - Localize a pasta onde você fez download.
+04 - Depois é só instalar, continuar, etc.
