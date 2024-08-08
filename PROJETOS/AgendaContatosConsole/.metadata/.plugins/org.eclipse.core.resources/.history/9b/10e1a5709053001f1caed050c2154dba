@@ -1,0 +1,61 @@
+package AgendaContatos;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String opcao = "";
+		while (!opcao.equals("5")){
+			System.out.println("AGENDA DE CONTATOS");
+			System.out.println("");
+			System.out.println("1 - Cadastrar");
+			System.out.println("2 - Listar");
+			System.out.println("3 - Editar");
+			System.out.println("4 - Excluir");
+			System.out.println("5 - Sair");
+			System.out.println("");
+			System.out.println("Opção Desejada:");
+			opcao = sc.next();
+			if (opcao.equals("1")){
+				cadastrar();
+			} else if (opcao.equals("2")){
+				listar();
+			} else if (opcao.equals("3")){
+				System.out.println("EDITAR");
+			} else if (opcao.equals("4")){
+				System.out.println("EXCLUIR");
+			} else if (opcao.equals("5")){
+				System.out.println("SAIR");
+				break;
+			} else {
+				System.out.println("Selecione uma opção válida!");
+			}
+			opcao = "";
+		}	
+		sc.close();
+	}
+	public static void cadastrar(){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("\n\nCADASTRAR\n\n");
+		System.out.print("Registro No: ");
+		int id = sc.nextLine();
+		System.out.print("Nome: ");
+		String nome = sc.nextLine();
+		System.out.print("Endereço: ");
+		String endereco = sc.nextLine();
+		System.out.print("Telefone: ");
+		String telefone = sc.nextLine();
+		System.out.print("E-Mail: ");
+		String email = sc.nextLine();
+		Contatos contato = new Contatos();
+		contato.inserir(id, nome, endereco, telefone, email);
+	}
+	public static void listar(){
+		System.out.println("\n\nLISTAR\n\n");
+		Contatos contato = new Contatos();
+		contato.mostrar();
+	}
+}

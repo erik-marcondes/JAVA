@@ -1,0 +1,60 @@
+package AgendaContatos;
+
+import java.io.*;
+
+public class Contatos {
+	private int id;
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private String email;
+	
+	public Contatos(int id, String nome, String endereco, String telefone, String email){
+		this.id = id;
+		this.nome = nome;
+		this.endereco = endereco;
+		this.telefone = telefone;
+		this.email = email;
+		FileWriter arquivo = new FileWriter("Contatos.txt");
+		BufferedWriter saida = new BufferedWriter(arquivo);
+		saida.write(this.id + ";");
+		saida.write(this.nome + ";");
+		saida.write(this.endereco + ";");
+		saida.write(this.telefone + ";");
+		saida.write(this.email + ";");
+		saida.write("\n");
+		saida.write("Viva o jogo dos Canibais! ");
+		saida.flush();
+	}
+
+	public void setId(int id){
+		this.id = id;
+	}
+	public int getId(){
+		return this.id;
+	}
+	public void setNome(String nome){
+		this.nome = nome;
+	}
+	public String getNome(){
+		return this.nome;
+	}
+	public void setEndereco(String endereco){
+		this.endereco = endereco;
+	}
+	public String getEndereco(){
+		return this.endereco;
+	}
+	public void setTelefone(String telefone){
+		this.telefone = telefone;
+	}
+	public String getTelefone(){
+		return this.telefone;
+	}
+	public void setEMail(String email){
+		this.email = email;
+	}
+	public String getEMail(){
+		return this.email;
+	}
+}

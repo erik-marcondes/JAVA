@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace_user>
+	<active_project>
+		<label>JOption</label>
+	</active_project>
+	<projects>
+		<project>
+			<label>JOption</label>
+			<showfiles>false</showfiles>
+			<folderitem>
+				<path>Nova pasta</path>
+			</folderitem>
+			<folderitem>
+				<path>Nova pasta\Nova pasta</path>
+			</folderitem>
+		</project>
+	</projects>
+	<open_files>
+		<docitem>
+			<path>TesteJOption.java</path>
+			<source>true</source>
+			<index>0</index>
+			<active>true</active>
+		</docitem>
+	</open_files>
+</workspace_user>

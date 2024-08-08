@@ -1,0 +1,63 @@
+package AgendaContatos;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String opcao = "";
+		while (!opcao.equals("5")){
+			System.out.println("AGENDA DE CONTATOS");
+			System.out.println("");
+			System.out.println("1 - Cadastrar");
+			System.out.println("2 - Listar");
+			System.out.println("3 - Editar");
+			System.out.println("4 - Excluir");
+			System.out.println("5 - Sair");
+			System.out.println("");
+			System.out.println("Opção Desejada:");
+			opcao = sc.next();
+			System.out.println("Opção escolhida: " + opcao);
+			if (opcao.equals("1")){
+				System.out.println("CADASTRAR");
+			} else if (opcao.equals("2")){
+				System.out.println("LISTAR");
+			} else if (opcao.equals("3")){
+				System.out.println("EDITAR");
+			} else if (opcao.equals("4")){
+				System.out.println("EXCLUIR");
+			} else if (opcao.equals("5")){
+				System.out.println("SAIR");
+				break;
+			} else {
+				System.out.println("Selecione uma opção válida!");
+			}
+			opcao = "";
+			limpaTela();
+		}	
+		sc.close();
+	}
+	
+	public final static void limpaTela()
+	{
+	    try
+	    {
+	        final String os = System.getProperty("os.name");
+
+	        if (os.contains("Windows"))
+	        {
+	            Runtime.getRuntime().exec("cls");
+	        }
+	        else
+	        {
+	            Runtime.getRuntime().exec("clear");
+	        }
+	    }
+	    catch (final Exception e)
+	    {
+	        //  Handle any exceptions.
+	    }
+	}
+
+}

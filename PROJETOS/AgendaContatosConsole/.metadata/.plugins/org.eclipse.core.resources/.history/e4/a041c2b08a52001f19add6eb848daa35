@@ -1,0 +1,25 @@
+package AgendaContatos;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		String opcao;
+		System.out.println("AGENDA DE CONTATOS");
+		System.out.println("");
+		System.out.println("1 - Cadastrar");
+		System.out.println("2 - Listar");
+		System.out.println("3 - Editar");
+		System.out.println("4 - Excluir");
+		System.out.println("5 - Sair");
+		System.out.println("");
+		System.out.println("Opção Desejada:");
+		Scanner sc = new Scanner(System.in);
+		opcao = sc.next();
+		System.out.println("Opção escolhida: " + opcao);
+		sc.close();
+		
+	}
+
+}
